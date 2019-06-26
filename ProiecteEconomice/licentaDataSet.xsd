@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="licentaDataSet" targetNamespace="http://tempuri.org/licentaDataSet.xsd" xmlns:mstns="http://tempuri.org/licentaDataSet.xsd" xmlns="http://tempuri.org/licentaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="licentaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="licentaConnectionString (Settings)" PropertyReference="ApplicationSettings.ProiecteEconomice.Properties.Settings.GlobalReference.Default.licentaConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".angajat.*
+FROM     "public".angajat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="numeangajat" DataSetColumn="numeangajat" />
+              <Mapping SourceColumn="prenumeangajat" DataSetColumn="prenumeangajat" />
+              <Mapping SourceColumn="idjob" DataSetColumn="idjob" />
+              <Mapping SourceColumn="iddepartament" DataSetColumn="iddepartament" />
+              <Mapping SourceColumn="idcurriculum" DataSetColumn="idcurriculum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".asociere.*
+FROM     "public".asociere</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="idsarcina" DataSetColumn="idsarcina" />
+              <Mapping SourceColumn="datasiora" DataSetColumn="datasiora" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable3TableAdapter" GeneratorDataComponentClassName="DataTable3TableAdapter" Name="DataTable3" UserDataComponentName="DataTable3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".complexitate.*
+FROM     "public".complexitate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="domeniuexperienta" DataSetColumn="domeniuexperienta" />
+              <Mapping SourceColumn="definitie" DataSetColumn="definitie" />
+              <Mapping SourceColumn="recompensa" DataSetColumn="recompensa" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable4TableAdapter" GeneratorDataComponentClassName="DataTable4TableAdapter" Name="DataTable4" UserDataComponentName="DataTable4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".curriculum.*
+FROM     "public".curriculum</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idcurriculum" DataSetColumn="idcurriculum" />
+              <Mapping SourceColumn="facultate" DataSetColumn="facultate" />
+              <Mapping SourceColumn="domeniuexperienta" DataSetColumn="domeniuexperienta" />
+              <Mapping SourceColumn="permisconducere" DataSetColumn="permisconducere" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable5TableAdapter" GeneratorDataComponentClassName="DataTable5TableAdapter" Name="DataTable5" UserDataComponentName="DataTable5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".departament.*
+FROM     "public".departament</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="iddepartament" DataSetColumn="iddepartament" />
+              <Mapping SourceColumn="numedepartament" DataSetColumn="numedepartament" />
+              <Mapping SourceColumn="localitatedepartament" DataSetColumn="localitatedepartament" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable6TableAdapter" GeneratorDataComponentClassName="DataTable6TableAdapter" Name="DataTable6" UserDataComponentName="DataTable6TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".job.*
+FROM     "public".job</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idjob" DataSetColumn="idjob" />
+              <Mapping SourceColumn="numejob" DataSetColumn="numejob" />
+              <Mapping SourceColumn="datalimita" DataSetColumn="datalimita" />
+              <Mapping SourceColumn="salariubaza" DataSetColumn="salariubaza" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable7TableAdapter" GeneratorDataComponentClassName="DataTable7TableAdapter" Name="DataTable7" UserDataComponentName="DataTable7TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".logare.*
+FROM     "public".logare</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="password" DataSetColumn="password" />
+              <Mapping SourceColumn="nivelacces" DataSetColumn="nivelacces" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable8TableAdapter" GeneratorDataComponentClassName="DataTable8TableAdapter" Name="DataTable8" UserDataComponentName="DataTable8TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".performanta.*
+FROM     "public".performanta</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="sarcinicompletate" DataSetColumn="sarcinicompletate" />
+              <Mapping SourceColumn="sarcininecompletate" DataSetColumn="sarcininecompletate" />
+              <Mapping SourceColumn="bonus" DataSetColumn="bonus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable9TableAdapter" GeneratorDataComponentClassName="DataTable9TableAdapter" Name="DataTable9" UserDataComponentName="DataTable9TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".pontaj.*
+FROM     "public".pontaj</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idpontaj" DataSetColumn="idpontaj" />
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="an" DataSetColumn="an" />
+              <Mapping SourceColumn="luna" DataSetColumn="luna" />
+              <Mapping SourceColumn="saptamana" DataSetColumn="saptamana" />
+              <Mapping SourceColumn="zi" DataSetColumn="zi" />
+              <Mapping SourceColumn="totaloresaptamana" DataSetColumn="totaloresaptamana" />
+              <Mapping SourceColumn="totaloreluna" DataSetColumn="totaloreluna" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable10TableAdapter" GeneratorDataComponentClassName="DataTable10TableAdapter" Name="DataTable10" UserDataComponentName="DataTable10TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".prezenta.*
+FROM     "public".prezenta</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idangajat" DataSetColumn="idangajat" />
+              <Mapping SourceColumn="dataintrare" DataSetColumn="dataintrare" />
+              <Mapping SourceColumn="dataiesire" DataSetColumn="dataiesire" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable11TableAdapter" GeneratorDataComponentClassName="DataTable11TableAdapter" Name="DataTable11" UserDataComponentName="DataTable11TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="licentaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "public".sarcina.*
+FROM     "public".sarcina</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idsarcina" DataSetColumn="idsarcina" />
+              <Mapping SourceColumn="descriere" DataSetColumn="descriere" />
+              <Mapping SourceColumn="data" DataSetColumn="data" />
+              <Mapping SourceColumn="domeniuexperienta" DataSetColumn="domeniuexperienta" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="licentaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="licentaDataSet" msprop:Generator_UserDSName="licentaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="numeangajat" msprop:Generator_ColumnVarNameInTable="columnnumeangajat" msprop:Generator_ColumnPropNameInRow="numeangajat" msprop:Generator_ColumnPropNameInTable="numeangajatColumn" msprop:Generator_UserColumnName="numeangajat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenumeangajat" msprop:Generator_ColumnVarNameInTable="columnprenumeangajat" msprop:Generator_ColumnPropNameInRow="prenumeangajat" msprop:Generator_ColumnPropNameInTable="prenumeangajatColumn" msprop:Generator_UserColumnName="prenumeangajat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idjob" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidjob" msprop:Generator_ColumnPropNameInRow="idjob" msprop:Generator_ColumnPropNameInTable="idjobColumn" msprop:Generator_UserColumnName="idjob" type="xs:int" />
+              <xs:element name="iddepartament" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columniddepartament" msprop:Generator_ColumnPropNameInRow="iddepartament" msprop:Generator_ColumnPropNameInTable="iddepartamentColumn" msprop:Generator_UserColumnName="iddepartament" type="xs:int" />
+              <xs:element name="idcurriculum" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidcurriculum" msprop:Generator_ColumnPropNameInRow="idcurriculum" msprop:Generator_ColumnPropNameInTable="idcurriculumColumn" msprop:Generator_UserColumnName="idcurriculum" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="idsarcina" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidsarcina" msprop:Generator_ColumnPropNameInRow="idsarcina" msprop:Generator_ColumnPropNameInTable="idsarcinaColumn" msprop:Generator_UserColumnName="idsarcina" type="xs:int" />
+              <xs:element name="datasiora" msprop:Generator_ColumnVarNameInTable="columndatasiora" msprop:Generator_ColumnPropNameInRow="datasiora" msprop:Generator_ColumnPropNameInTable="datasioraColumn" msprop:Generator_UserColumnName="datasiora" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable3" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_RowClassName="DataTable3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="domeniuexperienta" msprop:Generator_ColumnVarNameInTable="columndomeniuexperienta" msprop:Generator_ColumnPropNameInRow="domeniuexperienta" msprop:Generator_ColumnPropNameInTable="domeniuexperientaColumn" msprop:Generator_UserColumnName="domeniuexperienta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="definitie" msprop:Generator_ColumnVarNameInTable="columndefinitie" msprop:Generator_ColumnPropNameInRow="definitie" msprop:Generator_ColumnPropNameInTable="definitieColumn" msprop:Generator_UserColumnName="definitie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="recompensa" msprop:Generator_ColumnVarNameInTable="columnrecompensa" msprop:Generator_ColumnPropNameInRow="recompensa" msprop:Generator_ColumnPropNameInTable="recompensaColumn" msprop:Generator_UserColumnName="recompensa" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable4" msprop:Generator_TableClassName="DataTable4DataTable" msprop:Generator_TableVarName="tableDataTable4" msprop:Generator_TablePropName="DataTable4" msprop:Generator_RowDeletingName="DataTable4RowDeleting" msprop:Generator_RowChangingName="DataTable4RowChanging" msprop:Generator_RowEvHandlerName="DataTable4RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable4RowDeleted" msprop:Generator_UserTableName="DataTable4" msprop:Generator_RowChangedName="DataTable4RowChanged" msprop:Generator_RowEvArgName="DataTable4RowChangeEvent" msprop:Generator_RowClassName="DataTable4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idcurriculum" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidcurriculum" msprop:Generator_ColumnPropNameInRow="idcurriculum" msprop:Generator_ColumnPropNameInTable="idcurriculumColumn" msprop:Generator_UserColumnName="idcurriculum" type="xs:int" />
+              <xs:element name="facultate" msprop:Generator_ColumnVarNameInTable="columnfacultate" msprop:Generator_ColumnPropNameInRow="facultate" msprop:Generator_ColumnPropNameInTable="facultateColumn" msprop:Generator_UserColumnName="facultate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="domeniuexperienta" msprop:Generator_ColumnVarNameInTable="columndomeniuexperienta" msprop:Generator_ColumnPropNameInRow="domeniuexperienta" msprop:Generator_ColumnPropNameInTable="domeniuexperientaColumn" msprop:Generator_UserColumnName="domeniuexperienta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="permisconducere" msprop:Generator_ColumnVarNameInTable="columnpermisconducere" msprop:Generator_ColumnPropNameInRow="permisconducere" msprop:Generator_ColumnPropNameInTable="permisconducereColumn" msprop:Generator_UserColumnName="permisconducere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable5" msprop:Generator_TableClassName="DataTable5DataTable" msprop:Generator_TableVarName="tableDataTable5" msprop:Generator_TablePropName="DataTable5" msprop:Generator_RowDeletingName="DataTable5RowDeleting" msprop:Generator_RowChangingName="DataTable5RowChanging" msprop:Generator_RowEvHandlerName="DataTable5RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5RowDeleted" msprop:Generator_UserTableName="DataTable5" msprop:Generator_RowChangedName="DataTable5RowChanged" msprop:Generator_RowEvArgName="DataTable5RowChangeEvent" msprop:Generator_RowClassName="DataTable5Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="iddepartament" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columniddepartament" msprop:Generator_ColumnPropNameInRow="iddepartament" msprop:Generator_ColumnPropNameInTable="iddepartamentColumn" msprop:Generator_UserColumnName="iddepartament" type="xs:int" />
+              <xs:element name="numedepartament" msprop:Generator_ColumnVarNameInTable="columnnumedepartament" msprop:Generator_ColumnPropNameInRow="numedepartament" msprop:Generator_ColumnPropNameInTable="numedepartamentColumn" msprop:Generator_UserColumnName="numedepartament">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="localitatedepartament" msprop:Generator_ColumnVarNameInTable="columnlocalitatedepartament" msprop:Generator_ColumnPropNameInRow="localitatedepartament" msprop:Generator_ColumnPropNameInTable="localitatedepartamentColumn" msprop:Generator_UserColumnName="localitatedepartament" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable6" msprop:Generator_TableClassName="DataTable6DataTable" msprop:Generator_TableVarName="tableDataTable6" msprop:Generator_TablePropName="DataTable6" msprop:Generator_RowDeletingName="DataTable6RowDeleting" msprop:Generator_RowChangingName="DataTable6RowChanging" msprop:Generator_RowEvHandlerName="DataTable6RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable6RowDeleted" msprop:Generator_UserTableName="DataTable6" msprop:Generator_RowChangedName="DataTable6RowChanged" msprop:Generator_RowEvArgName="DataTable6RowChangeEvent" msprop:Generator_RowClassName="DataTable6Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idjob" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidjob" msprop:Generator_ColumnPropNameInRow="idjob" msprop:Generator_ColumnPropNameInTable="idjobColumn" msprop:Generator_UserColumnName="idjob" type="xs:int" />
+              <xs:element name="numejob" msprop:Generator_ColumnVarNameInTable="columnnumejob" msprop:Generator_ColumnPropNameInRow="numejob" msprop:Generator_ColumnPropNameInTable="numejobColumn" msprop:Generator_UserColumnName="numejob">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datalimita" msprop:Generator_ColumnVarNameInTable="columndatalimita" msprop:Generator_ColumnPropNameInRow="datalimita" msprop:Generator_ColumnPropNameInTable="datalimitaColumn" msprop:Generator_UserColumnName="datalimita" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="salariubaza" msprop:Generator_ColumnVarNameInTable="columnsalariubaza" msprop:Generator_ColumnPropNameInRow="salariubaza" msprop:Generator_ColumnPropNameInTable="salariubazaColumn" msprop:Generator_UserColumnName="salariubaza" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable7" msprop:Generator_TableClassName="DataTable7DataTable" msprop:Generator_TableVarName="tableDataTable7" msprop:Generator_TablePropName="DataTable7" msprop:Generator_RowDeletingName="DataTable7RowDeleting" msprop:Generator_RowChangingName="DataTable7RowChanging" msprop:Generator_RowEvHandlerName="DataTable7RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable7RowDeleted" msprop:Generator_UserTableName="DataTable7" msprop:Generator_RowChangedName="DataTable7RowChanged" msprop:Generator_RowEvArgName="DataTable7RowChangeEvent" msprop:Generator_RowClassName="DataTable7Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="password" msprop:Generator_ColumnVarNameInTable="columnpassword" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_UserColumnName="password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nivelacces" msprop:Generator_ColumnVarNameInTable="columnnivelacces" msprop:Generator_ColumnPropNameInRow="nivelacces" msprop:Generator_ColumnPropNameInTable="nivelaccesColumn" msprop:Generator_UserColumnName="nivelacces" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable8" msprop:Generator_TableClassName="DataTable8DataTable" msprop:Generator_TableVarName="tableDataTable8" msprop:Generator_TablePropName="DataTable8" msprop:Generator_RowDeletingName="DataTable8RowDeleting" msprop:Generator_RowChangingName="DataTable8RowChanging" msprop:Generator_RowEvHandlerName="DataTable8RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable8RowDeleted" msprop:Generator_UserTableName="DataTable8" msprop:Generator_RowChangedName="DataTable8RowChanged" msprop:Generator_RowEvArgName="DataTable8RowChangeEvent" msprop:Generator_RowClassName="DataTable8Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="sarcinicompletate" msprop:Generator_ColumnVarNameInTable="columnsarcinicompletate" msprop:Generator_ColumnPropNameInRow="sarcinicompletate" msprop:Generator_ColumnPropNameInTable="sarcinicompletateColumn" msprop:Generator_UserColumnName="sarcinicompletate" type="xs:int" minOccurs="0" />
+              <xs:element name="sarcininecompletate" msprop:Generator_ColumnVarNameInTable="columnsarcininecompletate" msprop:Generator_ColumnPropNameInRow="sarcininecompletate" msprop:Generator_ColumnPropNameInTable="sarcininecompletateColumn" msprop:Generator_UserColumnName="sarcininecompletate" type="xs:int" minOccurs="0" />
+              <xs:element name="bonus" msprop:Generator_ColumnVarNameInTable="columnbonus" msprop:Generator_ColumnPropNameInRow="bonus" msprop:Generator_ColumnPropNameInTable="bonusColumn" msprop:Generator_UserColumnName="bonus" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable9" msprop:Generator_TableClassName="DataTable9DataTable" msprop:Generator_TableVarName="tableDataTable9" msprop:Generator_TablePropName="DataTable9" msprop:Generator_RowDeletingName="DataTable9RowDeleting" msprop:Generator_RowChangingName="DataTable9RowChanging" msprop:Generator_RowEvHandlerName="DataTable9RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable9RowDeleted" msprop:Generator_UserTableName="DataTable9" msprop:Generator_RowChangedName="DataTable9RowChanged" msprop:Generator_RowEvArgName="DataTable9RowChangeEvent" msprop:Generator_RowClassName="DataTable9Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idpontaj" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidpontaj" msprop:Generator_ColumnPropNameInRow="idpontaj" msprop:Generator_ColumnPropNameInTable="idpontajColumn" msprop:Generator_UserColumnName="idpontaj" type="xs:int" />
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="an" msprop:Generator_ColumnVarNameInTable="columnan" msprop:Generator_ColumnPropNameInRow="an" msprop:Generator_ColumnPropNameInTable="anColumn" msprop:Generator_UserColumnName="an" type="xs:decimal" minOccurs="0" />
+              <xs:element name="luna" msprop:Generator_ColumnVarNameInTable="columnluna" msprop:Generator_ColumnPropNameInRow="luna" msprop:Generator_ColumnPropNameInTable="lunaColumn" msprop:Generator_UserColumnName="luna" type="xs:decimal" minOccurs="0" />
+              <xs:element name="saptamana" msprop:Generator_ColumnVarNameInTable="columnsaptamana" msprop:Generator_ColumnPropNameInRow="saptamana" msprop:Generator_ColumnPropNameInTable="saptamanaColumn" msprop:Generator_UserColumnName="saptamana" type="xs:decimal" minOccurs="0" />
+              <xs:element name="zi" msprop:Generator_ColumnVarNameInTable="columnzi" msprop:Generator_ColumnPropNameInRow="zi" msprop:Generator_ColumnPropNameInTable="ziColumn" msprop:Generator_UserColumnName="zi" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totaloresaptamana" msprop:Generator_ColumnVarNameInTable="columntotaloresaptamana" msprop:Generator_ColumnPropNameInRow="totaloresaptamana" msprop:Generator_ColumnPropNameInTable="totaloresaptamanaColumn" msprop:Generator_UserColumnName="totaloresaptamana" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totaloreluna" msprop:Generator_ColumnVarNameInTable="columntotaloreluna" msprop:Generator_ColumnPropNameInRow="totaloreluna" msprop:Generator_ColumnPropNameInTable="totalorelunaColumn" msprop:Generator_UserColumnName="totaloreluna" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable10" msprop:Generator_TableClassName="DataTable10DataTable" msprop:Generator_TableVarName="tableDataTable10" msprop:Generator_TablePropName="DataTable10" msprop:Generator_RowDeletingName="DataTable10RowDeleting" msprop:Generator_RowChangingName="DataTable10RowChanging" msprop:Generator_RowEvHandlerName="DataTable10RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable10RowDeleted" msprop:Generator_UserTableName="DataTable10" msprop:Generator_RowChangedName="DataTable10RowChanged" msprop:Generator_RowEvArgName="DataTable10RowChangeEvent" msprop:Generator_RowClassName="DataTable10Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idangajat" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidangajat" msprop:Generator_ColumnPropNameInRow="idangajat" msprop:Generator_ColumnPropNameInTable="idangajatColumn" msprop:Generator_UserColumnName="idangajat" type="xs:int" />
+              <xs:element name="dataintrare" msprop:Generator_ColumnVarNameInTable="columndataintrare" msprop:Generator_ColumnPropNameInRow="dataintrare" msprop:Generator_ColumnPropNameInTable="dataintrareColumn" msprop:Generator_UserColumnName="dataintrare" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="dataiesire" msprop:Generator_ColumnVarNameInTable="columndataiesire" msprop:Generator_ColumnPropNameInRow="dataiesire" msprop:Generator_ColumnPropNameInTable="dataiesireColumn" msprop:Generator_UserColumnName="dataiesire" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable11" msprop:Generator_TableClassName="DataTable11DataTable" msprop:Generator_TableVarName="tableDataTable11" msprop:Generator_TablePropName="DataTable11" msprop:Generator_RowDeletingName="DataTable11RowDeleting" msprop:Generator_RowChangingName="DataTable11RowChanging" msprop:Generator_RowEvHandlerName="DataTable11RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable11RowDeleted" msprop:Generator_UserTableName="DataTable11" msprop:Generator_RowChangedName="DataTable11RowChanged" msprop:Generator_RowEvArgName="DataTable11RowChangeEvent" msprop:Generator_RowClassName="DataTable11Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idsarcina" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidsarcina" msprop:Generator_ColumnPropNameInRow="idsarcina" msprop:Generator_ColumnPropNameInTable="idsarcinaColumn" msprop:Generator_UserColumnName="idsarcina" type="xs:int" />
+              <xs:element name="descriere" msprop:Generator_ColumnVarNameInTable="columndescriere" msprop:Generator_ColumnPropNameInRow="descriere" msprop:Generator_ColumnPropNameInTable="descriereColumn" msprop:Generator_UserColumnName="descriere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="domeniuexperienta" msprop:Generator_ColumnVarNameInTable="columndomeniuexperienta" msprop:Generator_ColumnPropNameInRow="domeniuexperienta" msprop:Generator_ColumnPropNameInTable="domeniuexperientaColumn" msprop:Generator_UserColumnName="domeniuexperienta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:idangajat" />
+    </xs:unique>
+    <xs:unique name="DataTable2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable2" />
+      <xs:field xpath="mstns:idangajat" />
+      <xs:field xpath="mstns:idsarcina" />
+      <xs:field xpath="mstns:datasiora" />
+    </xs:unique>
+    <xs:unique name="DataTable3_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable3" />
+      <xs:field xpath="mstns:domeniuexperienta" />
+    </xs:unique>
+    <xs:unique name="DataTable4_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable4" />
+      <xs:field xpath="mstns:idcurriculum" />
+    </xs:unique>
+    <xs:unique name="DataTable5_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable5" />
+      <xs:field xpath="mstns:iddepartament" />
+    </xs:unique>
+    <xs:unique name="DataTable6_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable6" />
+      <xs:field xpath="mstns:idjob" />
+    </xs:unique>
+    <xs:unique name="DataTable7_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable7" />
+      <xs:field xpath="mstns:username" />
+    </xs:unique>
+    <xs:unique name="DataTable9_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable9" />
+      <xs:field xpath="mstns:idpontaj" />
+    </xs:unique>
+    <xs:unique name="DataTable11_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable11" />
+      <xs:field xpath="mstns:idsarcina" />
+    </xs:unique>
+    <xs:keyref name="FK_DataTable3_DataTable11" refer="DataTable3_Constraint1" msprop:rel_Generator_UserChildTable="DataTable11" msprop:rel_Generator_ChildPropName="GetDataTable11Rows" msprop:rel_Generator_UserRelationName="FK_DataTable3_DataTable11" msprop:rel_Generator_ParentPropName="DataTable3Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable3_DataTable11" msprop:rel_Generator_UserParentTable="DataTable3">
+      <xs:selector xpath=".//mstns:DataTable11" />
+      <xs:field xpath="mstns:domeniuexperienta" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable11" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable11" msprop:rel_Generator_ChildPropName="GetDataTable11Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable11" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable11" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable11" />
+      <xs:field xpath="mstns:idsarcina" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable10" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable10" msprop:rel_Generator_ChildPropName="GetDataTable10Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable10" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable10" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable10" />
+      <xs:field xpath="mstns:idangajat" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable8" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable8" msprop:rel_Generator_ChildPropName="GetDataTable8Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable8" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable8" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable8" />
+      <xs:field xpath="mstns:idangajat" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable7" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable7" msprop:rel_Generator_ChildPropName="GetDataTable7Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable7" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable7" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable7" />
+      <xs:field xpath="mstns:idangajat" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable6" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable6" msprop:rel_Generator_ChildPropName="GetDataTable6Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable6" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable6" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable6" />
+      <xs:field xpath="mstns:idjob" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable5" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable5" msprop:rel_Generator_ChildPropName="GetDataTable5Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable5" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable5" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable5" />
+      <xs:field xpath="mstns:iddepartament" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable3_DataTable4" refer="DataTable3_Constraint1" msprop:rel_Generator_UserChildTable="DataTable4" msprop:rel_Generator_ChildPropName="GetDataTable4Rows" msprop:rel_Generator_UserRelationName="FK_DataTable3_DataTable4" msprop:rel_Generator_ParentPropName="DataTable3Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable3_DataTable4" msprop:rel_Generator_UserParentTable="DataTable3">
+      <xs:selector xpath=".//mstns:DataTable4" />
+      <xs:field xpath="mstns:domeniuexperienta" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable4" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable4" msprop:rel_Generator_ChildPropName="GetDataTable4Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable4" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable4" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable4" />
+      <xs:field xpath="mstns:idcurriculum" />
+    </xs:keyref>
+    <xs:keyref name="FK_DataTable1_DataTable2" refer="Constraint1" msprop:rel_Generator_UserChildTable="DataTable2" msprop:rel_Generator_ChildPropName="GetDataTable2Rows" msprop:rel_Generator_UserRelationName="FK_DataTable1_DataTable2" msprop:rel_Generator_ParentPropName="DataTable1Row" msprop:rel_Generator_RelationVarName="relationFK_DataTable1_DataTable2" msprop:rel_Generator_UserParentTable="DataTable1">
+      <xs:selector xpath=".//mstns:DataTable2" />
+      <xs:field xpath="mstns:idangajat" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
