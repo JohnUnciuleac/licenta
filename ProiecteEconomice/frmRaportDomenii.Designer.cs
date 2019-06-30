@@ -51,6 +51,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtVal = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdSC)).BeginInit();
@@ -299,7 +301,7 @@
             this.grdSarcini.ReadOnly = true;
             this.grdSarcini.RowTemplate.Height = 24;
             this.grdSarcini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdSarcini.Size = new System.Drawing.Size(349, 198);
+            this.grdSarcini.Size = new System.Drawing.Size(349, 169);
             this.grdSarcini.TabIndex = 54;
             this.grdSarcini.TabStop = false;
             // 
@@ -329,13 +331,36 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label7.Location = new System.Drawing.Point(554, 330);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(188, 19);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Valoare totală domeniu";
+            // 
+            // txtVal
+            // 
+            this.txtVal.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVal.Location = new System.Drawing.Point(748, 325);
+            this.txtVal.Name = "txtVal";
+            this.txtVal.ReadOnly = true;
+            this.txtVal.Size = new System.Drawing.Size(130, 27);
+            this.txtVal.TabIndex = 57;
+            this.txtVal.TabStop = false;
+            // 
             // frmRaportDomenii
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 492);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.grdSarcini);
+            this.Controls.Add(this.txtVal);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label4);
@@ -392,5 +417,7 @@
         private System.Windows.Forms.Label label5;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtVal;
     }
 }

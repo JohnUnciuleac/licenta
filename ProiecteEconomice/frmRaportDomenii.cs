@@ -30,6 +30,8 @@ namespace ProiecteEconomice
         private void frmRaportDomenii_Load(object sender, EventArgs e)
         {
             label5.Visible = false;
+            label7.Visible = false;
+            txtVal.Visible = false;
 
             btnClose.Select();
 
@@ -193,11 +195,13 @@ namespace ProiecteEconomice
         private void grdTop_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             label5.Visible = true;
+            label7.Visible = true;
+            txtVal.Visible = true;
 
             conn = new NpgsqlConnection(connstring);
             conn.Open();
 
-            sql = @"SELECT IdSarcina, Descriere, Data FROM sarcina WHERE DomeniuExperienta ='" + grdTop.CurrentRow.Cells[0].FormattedValue.ToString() + "' ORDER BY 1 ASC";
+            sql = @"SELECT IdSarcina, Descriere, Data FROM sarcina WHERE DomeniuExperienta ='" + grdTop.CurrentRow.Cells[0].FormattedValue.ToString() + "' ORDER BY 3 ASC";
             cmd = new NpgsqlCommand(sql, conn);
 
             cititor = cmd.ExecuteReader();
@@ -212,6 +216,12 @@ namespace ProiecteEconomice
             grdSarcini.DataSource = dsSar;
             grdSarcini.DataMember = "Sarcini";
             grdSarcini.Refresh();
+
+            sql = @"SELECT SUM (recompensa) FROM sarcina JOIN complexitate on sarcina.domeniuexperienta = complexitate.domeniuexperienta where sarcina.domeniuexperienta ='" + grdTop.CurrentRow.Cells[0].FormattedValue.ToString() + "'";
+            cmd = new NpgsqlCommand(sql, conn);
+            int result = Convert.ToInt32(cmd.ExecuteScalar());
+
+            txtVal.Text = result.ToString() + " RON";
 
             conn.Close();
         }

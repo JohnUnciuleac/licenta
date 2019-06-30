@@ -155,6 +155,12 @@
     <Compile Include="frmRaportAngajat.Designer.cs">
       <DependentUpon>frmRaportAngajat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRaportAngajatA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaportAngajatA.Designer.cs">
+      <DependentUpon>frmRaportAngajatA.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRaportAngajati.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRaportAngajat.resx">
       <DependentUpon>frmRaportAngajat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaportAngajatA.resx">
+      <DependentUpon>frmRaportAngajatA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRaportAngajati.resx">
       <DependentUpon>frmRaportAngajati.cs</DependentUpon>

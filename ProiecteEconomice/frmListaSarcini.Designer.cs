@@ -99,7 +99,7 @@
             this.grdSarcini.ReadOnly = true;
             this.grdSarcini.RowTemplate.Height = 24;
             this.grdSarcini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdSarcini.Size = new System.Drawing.Size(590, 112);
+            this.grdSarcini.Size = new System.Drawing.Size(590, 145);
             this.grdSarcini.TabIndex = 18;
             this.grdSarcini.TabStop = false;
             this.grdSarcini.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSarcini_CellContentClick);
@@ -118,7 +118,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(605, 308);
+            this.btnClose.Location = new System.Drawing.Point(605, 328);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(180, 42);
             this.btnClose.TabIndex = 25;
@@ -131,7 +131,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 197);
+            this.label2.Location = new System.Drawing.Point(428, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 22);
             this.label2.TabIndex = 28;
@@ -143,7 +143,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(12, 197);
+            this.label3.Location = new System.Drawing.Point(12, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(416, 22);
             this.label3.TabIndex = 29;
@@ -155,7 +155,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(12, 219);
+            this.label4.Location = new System.Drawing.Point(12, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 22);
             this.label4.TabIndex = 30;
@@ -167,7 +167,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(12, 241);
+            this.label5.Location = new System.Drawing.Point(12, 271);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(200, 22);
             this.label5.TabIndex = 31;
@@ -179,7 +179,7 @@
             this.lblSC.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblSC.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSC.Location = new System.Drawing.Point(212, 219);
+            this.lblSC.Location = new System.Drawing.Point(212, 249);
             this.lblSC.Name = "lblSC";
             this.lblSC.Size = new System.Drawing.Size(200, 22);
             this.lblSC.TabIndex = 32;
@@ -191,7 +191,7 @@
             this.lblSN.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblSN.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSN.Location = new System.Drawing.Point(212, 241);
+            this.lblSN.Location = new System.Drawing.Point(212, 271);
             this.lblSN.Name = "lblSN";
             this.lblSN.Size = new System.Drawing.Size(220, 22);
             this.lblSN.TabIndex = 33;
@@ -203,7 +203,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label6.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(12, 263);
+            this.label6.Location = new System.Drawing.Point(12, 293);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(419, 22);
             this.label6.TabIndex = 34;
@@ -214,7 +214,7 @@
             this.lblBonusPrecedent.AutoSize = true;
             this.lblBonusPrecedent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblBonusPrecedent.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBonusPrecedent.Location = new System.Drawing.Point(428, 263);
+            this.lblBonusPrecedent.Location = new System.Drawing.Point(428, 293);
             this.lblBonusPrecedent.Name = "lblBonusPrecedent";
             this.lblBonusPrecedent.Size = new System.Drawing.Size(50, 22);
             this.lblBonusPrecedent.TabIndex = 35;
@@ -227,7 +227,7 @@
             this.txtDescriere.Location = new System.Drawing.Point(608, 130);
             this.txtDescriere.Multiline = true;
             this.txtDescriere.Name = "txtDescriere";
-            this.txtDescriere.Size = new System.Drawing.Size(177, 164);
+            this.txtDescriere.Size = new System.Drawing.Size(177, 185);
             this.txtDescriere.TabIndex = 36;
             this.txtDescriere.Text = "Selectează o sarcină pentru descriere";
             // 
@@ -237,7 +237,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label7.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(8, 318);
+            this.label7.Location = new System.Drawing.Point(8, 348);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(422, 22);
             this.label7.TabIndex = 37;
@@ -248,7 +248,7 @@
             this.lblTotalBonus.AutoSize = true;
             this.lblTotalBonus.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblTotalBonus.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalBonus.Location = new System.Drawing.Point(428, 318);
+            this.lblTotalBonus.Location = new System.Drawing.Point(428, 348);
             this.lblTotalBonus.Name = "lblTotalBonus";
             this.lblTotalBonus.Size = new System.Drawing.Size(50, 22);
             this.lblTotalBonus.TabIndex = 38;

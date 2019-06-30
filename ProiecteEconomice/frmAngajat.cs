@@ -120,7 +120,13 @@ namespace ProiecteEconomice
 
             conn.Close();
 
-            frmListaSarcini frm=new frmListaSarcini(IdAngajat);
+            frmListaSarcini frm = new frmListaSarcini(IdAngajat);
+            frm.Show();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            frmStatisticiAngajat frm = new frmStatisticiAngajat(lblNume.Text);
             frm.Show();
         }
     }

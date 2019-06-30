@@ -94,6 +94,28 @@ namespace ProiecteEconomice
 
             conn.Close();
 
+            for (int i = 0; i < grdSarcini.RowCount; i++)
+            {
+                DateTime dt1 = Convert.ToDateTime(grdSarcini.Rows[i].Cells[2].FormattedValue);
+                DateTime dt2 = DateTime.Now;
+
+                int timespan = Convert.ToInt32((dt1 - dt2).TotalDays);
+
+                if (timespan < 8)
+                {
+                    grdSarcini.Rows[i].DefaultCellStyle.ForeColor = Color.DarkRed;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionForeColor = Color.DarkRed;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionBackColor = Color.Yellow;
+                }
+
+                if (timespan < 2)
+                {
+                    grdSarcini.Rows[i].DefaultCellStyle.ForeColor = Color.Yellow;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionForeColor = Color.Yellow;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionBackColor = Color.DarkRed;
+                }
+            }
+
             double sum = 0;
 
             for (int i = 0; i < grdSarcini.RowCount; i++)
@@ -109,64 +131,79 @@ namespace ProiecteEconomice
 
         private void btnAnuleaza_Click(object sender, EventArgs e)
         {
-            int idSarcinaStocat;
-            idSarcinaStocat = Int32.Parse(grdSarcini.CurrentRow.Cells[0].FormattedValue.ToString());
 
-            string descriere;
-            descriere = grdSarcini.CurrentRow.Cells[1].FormattedValue.ToString();
+            DateTime dt1 = Convert.ToDateTime(grdSarcini.CurrentRow.Cells[2].FormattedValue);
+            DateTime dt2 = DateTime.Now;
 
-            string data;
-            data = grdSarcini.CurrentRow.Cells[2].FormattedValue.ToString();
+            int timespan = Convert.ToInt32((dt1 - dt2).TotalDays);
 
-            string domeniu;
-            domeniu = grdSarcini.CurrentRow.Cells[3].FormattedValue.ToString();
-
-            conn = new NpgsqlConnection(connstring);
-            conn.Open();
-
-            sql = @"INSERT INTO Sarcina VALUES(DEFAULT,'" + descriere + "','" + data + "'::DATE,'" + domeniu + "', true)";
-            cmd = new NpgsqlCommand(sql, conn);
-
-            cmd.ExecuteNonQuery();
-
-            sql = @"DELETE FROM Asociere WHERE IdSarcina =" + idSarcinaStocat;
-            cmd = new NpgsqlCommand(sql, conn);
-
-            cmd.ExecuteNonQuery();
-
-
-            MessageBox.Show("Sarcina a fost eliminata!", "Succes!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-            sql = @"SELECT Asociere.IdSarcina, Descriere ,Data , Sarcina.DomeniuExperienta AS Domeniu_Experienta, Recompensa FROM Complexitate JOIN Sarcina ON Complexitate.DomeniuExperienta = Sarcina.DomeniuExperienta  JOIN Asociere ON Sarcina.IdSarcina = Asociere.IdSarcina JOIN Angajat ON Asociere.IdAngajat = Angajat.IdAngajat WHERE Angajat.IdAngajat =" + lblIdAngajat.Text + " ORDER BY 1 ASC";
-            cmd = new NpgsqlCommand(sql, conn);
-
-            cititor = cmd.ExecuteReader();
-
-            dt = new DataTable("Sarcini");
-            dt.Load(cititor);
-
-            DataSet dsSarciniP;
-            dsSarciniP = new DataSet();
-            dsSarciniP.Tables.Add(dt);
-
-            grdSarcini.DataSource = dsSarciniP;
-            grdSarcini.DataMember = "Sarcini";
-            grdSarcini.Refresh();
-
-            conn.Close();
-
-            double sum = 0;
-
-            for (int i = 0; i < grdSarcini.RowCount; i++)
+            if (timespan < 2)
             {
-                string val = grdSarcini.Rows[i].Cells[4].FormattedValue.ToString();
-                sum += Double.Parse(val);
+                MessageBox.Show("Sarcina nu mai poate fi anulată din cauza timpului prea scurt! Vorbiți cu un administrator!",
+                    "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int idSarcinaStocat;
+                idSarcinaStocat = Int32.Parse(grdSarcini.CurrentRow.Cells[0].FormattedValue.ToString());
+
+                string descriere;
+                descriere = grdSarcini.CurrentRow.Cells[1].FormattedValue.ToString();
+
+                string data;
+                data = grdSarcini.CurrentRow.Cells[2].FormattedValue.ToString();
+
+                string domeniu;
+                domeniu = grdSarcini.CurrentRow.Cells[3].FormattedValue.ToString();
+
+                conn = new NpgsqlConnection(connstring);
+                conn.Open();
+
+                sql = @"INSERT INTO Sarcina VALUES(DEFAULT,'" + descriere + "','" + data + "'::DATE,'" + domeniu + "', true)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.ExecuteNonQuery();
+
+                sql = @"DELETE FROM Asociere WHERE IdSarcina =" + idSarcinaStocat;
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.ExecuteNonQuery();
+
+
+                MessageBox.Show("Sarcina a fost eliminata!", "Succes!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                sql = @"SELECT Asociere.IdSarcina, Descriere ,Data , Sarcina.DomeniuExperienta AS Domeniu_Experienta, Recompensa FROM Complexitate JOIN Sarcina ON Complexitate.DomeniuExperienta = Sarcina.DomeniuExperienta  JOIN Asociere ON Sarcina.IdSarcina = Asociere.IdSarcina JOIN Angajat ON Asociere.IdAngajat = Angajat.IdAngajat WHERE Angajat.IdAngajat =" + lblIdAngajat.Text + " ORDER BY 1 ASC";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cititor = cmd.ExecuteReader();
+
+                dt = new DataTable("Sarcini");
+                dt.Load(cititor);
+
+                DataSet dsSarciniP;
+                dsSarciniP = new DataSet();
+                dsSarciniP.Tables.Add(dt);
+
+                grdSarcini.DataSource = dsSarciniP;
+                grdSarcini.DataMember = "Sarcini";
+                grdSarcini.Refresh();
+
+                conn.Close();
+
+                double sum = 0;
+
+                for (int i = 0; i < grdSarcini.RowCount; i++)
+                {
+                    string val = grdSarcini.Rows[i].Cells[4].FormattedValue.ToString();
+                    sum += Double.Parse(val);
+                }
+
+                label2.Text = sum.ToString() + " RON";
+
+                lblTotalBonus.Text = (sum + Convert.ToDouble(lblBonusPrecedent.Text)).ToString() + " RON";
             }
 
-            label2.Text = sum.ToString() + " RON";
-
-            lblTotalBonus.Text = (sum + Convert.ToDouble(lblBonusPrecedent.Text)).ToString() + " RON";
         }
 
         private void btnClose_Click(object sender, EventArgs e)

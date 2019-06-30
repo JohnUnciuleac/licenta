@@ -16,7 +16,7 @@ namespace ProiecteEconomice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmStatistici());
+            Application.Run(new frmAngajat("Unciuleac","Ioan",2));
         }
     }
 }

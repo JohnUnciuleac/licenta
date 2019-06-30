@@ -103,7 +103,7 @@ namespace ProiecteEconomice
             conn = new NpgsqlConnection(connstring);
             conn.Open();
 
-            sql = @"SELECT Asociere.IdSarcina, Descriere ,Data , Sarcina.DomeniuExperienta AS Domeniu, Recompensa FROM Complexitate JOIN Sarcina ON Complexitate.DomeniuExperienta = Sarcina.DomeniuExperienta  JOIN Asociere ON Sarcina.IdSarcina = Asociere.IdSarcina JOIN Angajat ON Asociere.IdAngajat = Angajat.IdAngajat WHERE Angajat.IdAngajat =" + grdAngajati.CurrentRow.Cells[0].FormattedValue.ToString() + " ORDER BY 1 ASC";
+            sql = @"SELECT Asociere.IdSarcina, Descriere ,Data , Sarcina.DomeniuExperienta AS Domeniu, Recompensa FROM Complexitate JOIN Sarcina ON Complexitate.DomeniuExperienta = Sarcina.DomeniuExperienta  JOIN Asociere ON Sarcina.IdSarcina = Asociere.IdSarcina JOIN Angajat ON Asociere.IdAngajat = Angajat.IdAngajat WHERE Angajat.IdAngajat =" + grdAngajati.CurrentRow.Cells[0].FormattedValue.ToString() + " ORDER BY 3 ASC";
             cmd = new NpgsqlCommand(sql, conn);
 
             cititor = cmd.ExecuteReader();
@@ -120,6 +120,29 @@ namespace ProiecteEconomice
             grdSarcini.Refresh();
 
             conn.Close();
+
+            for (int i = 0; i < grdSarcini.RowCount; i++)
+            {
+                DateTime dt1 = Convert.ToDateTime(grdSarcini.Rows[i].Cells[2].FormattedValue);
+                DateTime dt2 = DateTime.Now;
+
+                int timespan = Convert.ToInt32((dt1 - dt2).TotalDays);
+
+                if (timespan < 8)
+                {
+                    grdSarcini.Rows[i].DefaultCellStyle.ForeColor = Color.DarkRed;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionForeColor = Color.DarkRed;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionBackColor = Color.Yellow;
+                }
+
+                if (timespan < 2)
+                {
+                    grdSarcini.Rows[i].DefaultCellStyle.ForeColor = Color.Yellow;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionForeColor = Color.Yellow;
+                    grdSarcini.Rows[i].DefaultCellStyle.SelectionBackColor = Color.DarkRed;
+                }
+            }
+
 
             lblAre.Text = "Angajatul " + grdAngajati.CurrentRow.Cells[1].FormattedValue.ToString() + " " +
                            grdAngajati.CurrentRow.Cells[2].FormattedValue.ToString() + " are urmatoarele sarcini:";
