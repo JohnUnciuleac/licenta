@@ -33,5 +33,11 @@ namespace ProiecteEconomice
             frmRaportAngajat frm = new frmRaportAngajat();
             frm.Show();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmRaportDomenii frm = new frmRaportDomenii();
+            frm.Show();
+        }
     }
 }

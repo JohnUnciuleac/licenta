@@ -161,6 +161,12 @@
     <Compile Include="frmRaportAngajati.Designer.cs">
       <DependentUpon>frmRaportAngajati.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRaportDomenii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaportDomenii.Designer.cs">
+      <DependentUpon>frmRaportDomenii.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRaportP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     </Compile>
     <Compile Include="frmStatistici.Designer.cs">
       <DependentUpon>frmStatistici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatisticiAngajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatisticiAngajat.Designer.cs">
+      <DependentUpon>frmStatisticiAngajat.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateSarcina.cs">
       <SubType>Form</SubType>
@@ -220,6 +232,9 @@
     <EmbeddedResource Include="frmRaportAngajati.resx">
       <DependentUpon>frmRaportAngajati.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRaportDomenii.resx">
+      <DependentUpon>frmRaportDomenii.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRaportP.resx">
       <DependentUpon>frmRaportP.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStatistici.resx">
       <DependentUpon>frmStatistici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatisticiAngajat.resx">
+      <DependentUpon>frmStatisticiAngajat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateSarcina.resx">
       <DependentUpon>frmUpdateSarcina.cs</DependentUpon>

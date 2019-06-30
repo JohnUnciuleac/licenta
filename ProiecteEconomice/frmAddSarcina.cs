@@ -92,8 +92,6 @@ namespace ProiecteEconomice
                 conn.Close();
 
                 MessageBox.Show("Sarcina adaugata cu succes!");
-
-
             }
         }
     }
