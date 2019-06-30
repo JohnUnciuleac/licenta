@@ -106,6 +106,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetRP.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="frmAddSarcina.cs">
       <SubType>Form</SubType>
     </Compile>

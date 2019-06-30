@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdAngajati = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnInvalid = new System.Windows.Forms.Button();
@@ -62,16 +62,17 @@
             this.grdAngajati.AllowUserToResizeRows = false;
             this.grdAngajati.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdAngajati.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.grdAngajati.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.grdAngajati.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdAngajati.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdAngajati.DefaultCellStyle = dataGridViewCellStyle5;
             this.grdAngajati.Location = new System.Drawing.Point(12, 51);
             this.grdAngajati.MultiSelect = false;
             this.grdAngajati.Name = "grdAngajati";
@@ -150,7 +151,7 @@
             this.grdSarcini.AllowUserToResizeRows = false;
             this.grdSarcini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdSarcini.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.grdSarcini.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.grdSarcini.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.grdSarcini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSarcini.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grdSarcini.Location = new System.Drawing.Point(12, 259);
@@ -194,7 +195,7 @@
             this.grdSC.AllowUserToResizeRows = false;
             this.grdSC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdSC.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.grdSC.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.grdSC.BackgroundColor = System.Drawing.Color.Lavender;
             this.grdSC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grdSC.Location = new System.Drawing.Point(570, 51);
@@ -203,7 +204,7 @@
             this.grdSC.ReadOnly = true;
             this.grdSC.RowTemplate.Height = 24;
             this.grdSC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdSC.Size = new System.Drawing.Size(500, 105);
+            this.grdSC.Size = new System.Drawing.Size(509, 105);
             this.grdSC.TabIndex = 27;
             this.grdSC.TabStop = false;
             // 
@@ -219,13 +220,13 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(552, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(552, 467);
+            this.panel2.Size = new System.Drawing.Size(539, 467);
             this.panel2.TabIndex = 29;
             // 
             // btnAchita
             // 
             this.btnAchita.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAchita.Location = new System.Drawing.Point(382, 322);
+            this.btnAchita.Location = new System.Drawing.Point(361, 323);
             this.btnAchita.Name = "btnAchita";
             this.btnAchita.Size = new System.Drawing.Size(157, 26);
             this.btnAchita.TabIndex = 33;
@@ -274,7 +275,7 @@
             this.grdSN.AllowUserToResizeRows = false;
             this.grdSN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdSN.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.grdSN.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.grdSN.BackgroundColor = System.Drawing.Color.Lavender;
             this.grdSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grdSN.Location = new System.Drawing.Point(18, 212);
@@ -283,7 +284,7 @@
             this.grdSN.ReadOnly = true;
             this.grdSN.RowTemplate.Height = 24;
             this.grdSN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdSN.Size = new System.Drawing.Size(500, 87);
+            this.grdSN.Size = new System.Drawing.Size(509, 87);
             this.grdSN.TabIndex = 30;
             this.grdSN.TabStop = false;
             // 
@@ -302,7 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 467);
+            this.ClientSize = new System.Drawing.Size(1092, 467);
             this.Controls.Add(this.grdSC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

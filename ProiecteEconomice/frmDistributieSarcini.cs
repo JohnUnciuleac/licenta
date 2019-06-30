@@ -37,7 +37,6 @@ namespace ProiecteEconomice
             grdAngajati.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             grdAngajati.DefaultCellStyle.SelectionBackColor = Color.DeepSkyBlue;
             grdAngajati.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            grdAngajati.BackgroundColor = Color.White;
 
             grdAngajati.EnableHeadersVisualStyles = false;
             grdAngajati.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
@@ -48,7 +47,6 @@ namespace ProiecteEconomice
             grdSarcini.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             grdSarcini.DefaultCellStyle.SelectionBackColor = Color.DeepSkyBlue;
             grdSarcini.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            grdSarcini.BackgroundColor = Color.White;
 
             grdSarcini.EnableHeadersVisualStyles = false;
             grdSarcini.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
@@ -59,7 +57,6 @@ namespace ProiecteEconomice
             grdSC.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             grdSC.DefaultCellStyle.SelectionBackColor = Color.DeepSkyBlue;
             grdSC.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            grdSC.BackgroundColor = Color.White;
 
             grdSC.EnableHeadersVisualStyles = false;
             grdSC.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
@@ -70,7 +67,6 @@ namespace ProiecteEconomice
             grdSN.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             grdSN.DefaultCellStyle.SelectionBackColor = Color.DeepSkyBlue;
             grdSN.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            grdSN.BackgroundColor = Color.White;
 
             grdSN.EnableHeadersVisualStyles = false;
             grdSN.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);

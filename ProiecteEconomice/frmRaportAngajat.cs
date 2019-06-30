@@ -29,6 +29,8 @@ namespace ProiecteEconomice
 
         private void frmRaportAngajat_Load(object sender, EventArgs e)
         {
+            btnClose.Select();
+
             grdSC.BorderStyle = BorderStyle.None;
             grdSC.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             grdSC.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -199,5 +201,25 @@ namespace ProiecteEconomice
             txtTotal.Text = sum.ToString() + " RON";
         }
 
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bmp, 60, 30);
+        }
+
+        private Bitmap bmp;
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.CreateGraphics();
+            bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
+            Graphics mg = Graphics.FromImage(bmp);
+            mg.CopyFromScreen(this.Location.X, this.Location.Y, 10, 10, this.Size);
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

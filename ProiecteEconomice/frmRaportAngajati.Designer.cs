@@ -39,7 +39,8 @@
             this.txtSC = new System.Windows.Forms.TextBox();
             this.txtSN = new System.Windows.Forms.TextBox();
             this.txtBonus = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdRaport)).BeginInit();
             this.SuspendLayout();
@@ -150,22 +151,35 @@
             this.txtBonus.TabIndex = 16;
             this.txtBonus.TabStop = false;
             // 
-            // button1
+            // btnPrint
             // 
-            this.button1.Location = new System.Drawing.Point(361, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPrint.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(59, 409);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(329, 32);
+            this.btnPrint.TabIndex = 17;
+            this.btnPrint.Text = "Printează";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(464, 409);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(329, 32);
+            this.btnClose.TabIndex = 18;
+            this.btnClose.Text = "Închide";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmRaportAngajati
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(863, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(863, 464);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.txtBonus);
             this.Controls.Add(this.txtSN);
             this.Controls.Add(this.txtSC);
@@ -195,6 +209,7 @@
         private System.Windows.Forms.TextBox txtSC;
         private System.Windows.Forms.TextBox txtSN;
         private System.Windows.Forms.TextBox txtBonus;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnClose;
     }
 }

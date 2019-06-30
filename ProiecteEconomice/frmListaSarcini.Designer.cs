@@ -90,7 +90,7 @@
             this.grdSarcini.AllowUserToResizeRows = false;
             this.grdSarcini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdSarcini.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.grdSarcini.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.grdSarcini.BackgroundColor = System.Drawing.SystemColors.Control;
             this.grdSarcini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSarcini.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grdSarcini.Location = new System.Drawing.Point(12, 68);

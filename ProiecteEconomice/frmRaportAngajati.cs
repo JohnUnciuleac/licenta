@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using DGVPrinterHelper;
 
 namespace ProiecteEconomice
 {
@@ -29,6 +30,7 @@ namespace ProiecteEconomice
 
         private void frmRaportAngajati_Load(object sender, EventArgs e)
         {
+            btnClose.Select();
 
             grdRaport.BorderStyle = BorderStyle.None;
             grdRaport.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
@@ -87,6 +89,23 @@ namespace ProiecteEconomice
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = label1.Text;
+            printer.SubTitle = string.Format("Data: {0}", DateTime.Now);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PrintRowHeaders = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.PorportionalColumns = true;
+            printer.Footer = "Task Auction 2019 ";
+            printer.FooterSpacing = 15;
+            printer.PageSettings.Landscape = true;
+            printer.PrintDataGridView(grdRaport);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
