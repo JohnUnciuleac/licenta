@@ -73,7 +73,6 @@ namespace ProiecteEconomice
             grdSarcini.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             grdSarcini.DefaultCellStyle.SelectionBackColor = Color.DeepSkyBlue;
             grdSarcini.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            grdSarcini.BackgroundColor = Color.White;
 
             grdSarcini.EnableHeadersVisualStyles = false;
             grdSarcini.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
